@@ -1,8 +1,10 @@
-.cabeçalho_menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
     display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .cabeçalho {
