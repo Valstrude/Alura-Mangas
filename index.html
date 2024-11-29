@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AluraBooks</title>
+  <title>AniWeb</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header class="cabeçalho">
     <div class="container">
-      <input type="checkbox" id="menu" class="container__botao">
+      <input type="checkbox" id="menu" class="container_botao">
       <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+        <span class="cabeçalho_menu-hamburguer container_imagem"></span>
       </label>
       <ul class="lista-menu">
-        <li class="lista-menu__titulo">Categorias</li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Programação</a>
+        <li class="lista-menu_titulo">Mangás</li> <!-- categoria principal -->
+        <!-- categorias -->
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Animes</a>
         </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Front-end</a>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">HQ's</a>
         </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Livros</a>
         </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Business</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Design & UX</a>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Doramas</a>
         </li>
       </ul>
-      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+      <img src="img/logo.png" width="50" height="50" alt="Logo da Alurabooks" class="container_imagem">
+      <p>AniWeb</p>
     </div>
     <div class="container">
-      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
-      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container_imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container_imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container_imagem"></a>
     </div>
   </header>
 
   <section class="banner">
-    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    <h2 class="banner_titulo">Pesquisar Mangá especifico:</h2>
+    <hr>
+    <p class="banner_texto">Pode também pesquisar por tópicos, basta por o nome do tópico.</p>
+    <input type="search" class="banner_pesquisa" placeholder="O que esta em mente?">
   </section>
 
   <section class="carrossel">
-    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <h2 class="carrossel_titulo">Mangás que você talvez se interessa...</h2>
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="img/Apachekafka.svg"
-            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-        <div class="swiper-slide"><img src="img/Liderança.svg"
-            alt="Livro sobre liderança em design design da alura books"></div>
-        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alura books">
+        <div class="swiper-slide">
+          <a href="https://www.amazon.com.br/Black-Clover-1-Y%C3%BBki-Tabata/dp/8542611268"><img src="img/black.jpg" class="imagem" alt="black clover manga vol 1"></a>
         </div>
         <div class="swiper-slide">
-          <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+          <a href="https://www.amazon.com.br/One-Piece-Ed-Eiichiro-Oda/dp/8573516976/"><img src="img/op.jpg" class="imagem" alt="one piece manga vol 1"></a>
         </div>
         <div class="swiper-slide">
-          <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+          <a href="https://www.amazon.com.br/Bofuri-Dont-Want-Defense-Manga/dp/1975323866"><img src="img/bofuri.jpg" class="imagem" alt="bofuri manga vol 1"></a>
         </div>
         <div class="swiper-slide">
-          <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+          <a href="https://www.amazon.com.br/Shadows-House-Vol-1-Somato/dp/1975345924"><img src="img/shadow.jpg" class="imagem" alt="shadow house" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.amazon.com.br/Kamisama-Dolls-01-Hajime-Yamamura/dp/2505019215"><img src="img/kamisama.jpg" class="imagem" alt="Kamisama Dolls manga vol 1"/></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.amazon.com.br/Girls-Panzer-1-Ryouichi-Saitaniya/dp/8583622027"><img src="img/girlsundpanzer.jpg" class="imagem" alt="Girls & Panzer"/></a>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -81,9 +82,71 @@
         <div class="swiper-button-next"></div>
       </div>
 
+      <div class="card"> <!-- 1 linha-->
+        <div class="card_description"> <!-- 1 coluna-->
+          <div class="description">
+            <h3 class="description_titulo">Talvez você também se interesse por...</h3>
+            <hr>
+            <h2 class="description_titulo_manga" id="select_titulo">Black Clover</h2>
+            <p class="description_texto" id="select_texto">A história se passa em um mundo onde a magia é tudo e acompanha dois órfãos que se tornam rivais na disputa pelo título de Rei Mago, o cavaleiro mágico mais forte do reino de Clover; 
+              Asta é um dos garotos que tenta ser um cavaleiro mágico, mesmo sem ter poderes mágicos; 
+              Asta recebe um raro grimório de anti-magia, que pode anular qualquer magia; 
+              Asta e Yuno são abandonados em uma igreja no mesmo dia, mas Yuno tem poderes mágicos excepcionais; 
+              Asta e Yuno nutrem uma rivalidade amigável e estão prontos para encarar os mais difíceis desafios para conquistar seu sonho em comum. 
+              Black Clover é inspirado no mangá do mesmo nome, que já vendeu mais de 17 milhões de exemplares. O filme Black Clover: A Espada do Rei Mago foi lançado em 2023 e conta a história do Rei Mago, que não foi retratada nos quadrinhos.</p>
+          </div>
+          <img src="img/black.jpg" class="imagem">
+        </div>
+        <div class="card_botao">
+          <ul class="botao">
+            <li class="botao_item"><img src="img/Favoritos.svg" alt="favoritar mangá"></li>
+            <li class="botao_item"><img src="img/Compras.svg" alt="adicionar no carrinho"></li>
+          </ul>
+          <a href="#" class="botao_ancora">Saiba Mais</a>
+        </div>
+      </div>
     </div>
-
   </section>
+  <section class="topico">
+    <h2 class="topico_titulo">Todos os Tópicos:</h2>
+    <hr>
+    <ul class="topico_lista">
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Ação</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Comédia</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Drama</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Ficção Científica</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Terror</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Romance</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Suspense</a>
+      </li>
+      <li class="tipico_item">
+        <a href="#" class="topico_link">Fantasia</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2 class="contato_titulo">Seja notificado pelo E-mail</h2>
+    <hr>
+    <p class="contato_texto">Com qualquer mudança que forem adicionados.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato_email">
+  </section>
+  <hr>
+  <footer class="rodapé">
+    <h2 class="rodapé_titulo">Grupo Alura/Aluno</h2>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
